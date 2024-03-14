@@ -14,7 +14,7 @@ services:
   
   json-server:
     image: "node:18-alpine"
-    command: "json-server --watch ./_data/db.json --port 4000"
+    command: "json-server --watch db.json --port 4000"
     ports:
       - "4000:4000"
     volumes:
